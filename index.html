@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(
+          to right,
+          rgb(75, 121, 161),
+          rgb(40, 62, 81)
+        );
+      }
+
+      .heading {
+        text-align: center;
+        color: wheat;
+        margin-top: 5%;
+      }
+
+      .sub_heading {
+        text-align: center;
+        color: wheat;
+        margin-bottom: 2%;
+      
+      }
+
+      .input_area {
+        margin: auto;
+        width: 60%;
+      }
+
+      .myicons {
+        width: 100%;
+        height: 100%;
+      }
+
+      .clear_btn {
+        text-align: end;
+        width: 80%;
+        margin-bottom: 10px;
+      }
+
+      .items {
+        width: 90%;
+        margin: auto;
+      }
+
+      .line-through {
+        text-decoration: line-through;
+      }
+    </style>
+
+    <title>TODO LIST</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Todo</h1>
+    </div>
+    <div class="sub_heading">
+      <h2 id="setDate" >Date</h2>
+    </div>
+    <div class="input_area">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Default"
+          aria-describedby="inputGroup-sizing-default"
+          id="input_task"
+          placeholder="Add Task To Do"
+        />
+        <div id="add_task" class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            ><i class="myicons bi bi-plus-square-fill btn btn-warning"></i>
+            <!-- <i class="bi bi-plus-lg"></i> -->
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="clear_btn">
+      <button id="clear_all_button" class="btn btn-primary">Clear All</button>
+    </div>
+
+    <div class="items">
+      <ul id="todo-list" class="list-group"></ul>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
