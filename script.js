@@ -56,7 +56,7 @@ document.getElementById("clear_all_button").addEventListener("click", () => {
     addData.removeChild(addData.firstChild);
   }
   let data = `
-      <button style="width:30%; font-weight: bold; text-transform: uppercase;" class="m-auto clear-task-button btn btn-warning">
+      <button style="width:200px; font-weight: bold; text-transform: uppercase;" class="m-auto clear-task-button btn btn-warning">
       List is Cleared Add tasks to do
     </button>
   `;
