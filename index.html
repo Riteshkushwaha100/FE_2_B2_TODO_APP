@@ -39,7 +39,6 @@
         text-align: center;
         color: wheat;
         margin-bottom: 2%;
-      
       }
 
       .input_area {
@@ -66,6 +65,26 @@
       .line-through {
         text-decoration: line-through;
       }
+
+      .clock {
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%); */
+        color: #17d4fe;
+        font-size: 50px;
+        font-family: Orbitron;
+        letter-spacing: 7px;
+      }
+
+      @media (max-width: 600px) {
+        .clear_btn {
+          width: 80%; /* Make the content width smaller on small screens */
+          margin-bottom:10px; /* Center horizontally */
+          text-align: end;
+          
+        }
+      }
     </style>
 
     <title>TODO LIST</title>
@@ -75,8 +94,12 @@
       <h1>Todo</h1>
     </div>
     <div class="sub_heading">
-      <h2 id="setDate" >Date</h2>
+      <h2 id="setDate">Date</h2>
+      <div>
+        <div id="MyClockDisplay" class="clock"></div>
+      </div>
     </div>
+
     <div class="input_area">
       <div class="input-group mb-3">
         <input
